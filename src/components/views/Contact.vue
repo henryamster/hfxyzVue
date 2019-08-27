@@ -21,7 +21,7 @@
 
             <li>
               <label for="message">Message:</label>
-              <b-input type="textarea" v-model="message" name="message" id="message" rows="15"></b-input>
+              <b-input type="textarea" v-model="message" name="message" id="message" rows="12"></b-input>
             </li>
             <li>
               <label for="email">Email:</label>
@@ -50,7 +50,7 @@ export default {
   methods: {
     success(user) {
       this.$buefy.toast.open({
-        message: `Logged in!`,
+        message: `Inquiry Sent!`,
         type: "is-success"
       });
       this.clearForm();

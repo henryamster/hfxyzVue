@@ -144,7 +144,7 @@ animation: reflect 16s infinite;
 @media screen and (max-width: 768px) {
   .logo{
     font-size: 24px;
-    margin: 2em 2em;
+    margin: 1.4em 1.4em;
     padding-top: 0;
   }
   .iso-container {

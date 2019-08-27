@@ -22,7 +22,7 @@ export default {
 
 <style>
 .min-100 {
-  min-height: 100vh;
+  min-height: 60vh;
 }
 .slide-fade-enter-active {
    transition: all .7s cubic-bezier(1.0, 0.5, 0.8, 1.0);

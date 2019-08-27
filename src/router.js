@@ -7,6 +7,8 @@ import Projects from "./components/views/Projects.vue";
 import Login from "./components/views/Login.vue";
 import Admin from "./components/views/Admin.vue";
 import store from "./store";
+import Blog from "./components/views/Blog.vue";
+import Entry from "./components/views/Entry.vue"
 Vue.use(Router);
 
 const router = new Router({
@@ -40,6 +42,15 @@ const router = new Router({
       meta: {
         requiresAuth: true
       }
+    },
+    {
+      path:'/blog',
+      name: 'blog',
+      component: Blog
+    },
+    { path: '/blog/:slug', 
+      name: 'entry',
+     component: Entry,
     }
   ]
 });

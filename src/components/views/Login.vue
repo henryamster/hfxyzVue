@@ -30,7 +30,7 @@ export default {
     user(auth) {}
   },
   methods: {
-    success(user) {
+    successLogin(user) {
       this.$buefy.toast.open({
         message: `Logged in!`,
         type: "is-success"
@@ -49,7 +49,7 @@ export default {
       let self = this;
       this.$auth.login(this.email, this.password).then(
         function(user) {
-          self.success(`You have logged in!`);
+          self.successLogin();
           self.$router.push({ path: "/admin" });
         },
         function(err) {
