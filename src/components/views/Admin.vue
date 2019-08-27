@@ -1,5 +1,8 @@
 <template>
   <div class="column">
+    <div class="column is-12 has-text-centered">
+      <router-link to="/CreatePost" class="button is-primary">Create New Blog Post</router-link>
+    </div>
     <div :key="inq" v-for="inq in inquiriesCollection">
       <h2 class="is-size-2">{{inq.name}}</h2>
       <p class="is-size-4 is-italic">{{inq.email}}</p>

@@ -21,11 +21,17 @@ Henry Fritz
         Web Design/ Development, Graphic Design, &amp; 3D Motion Graphics
       </span>
     </div>
+    <Blog class="has-background-white"/>
   </div>
 </template>
 
 <script>
-export default {};
+import Blog from "./Blog";
+export default {
+  components:{
+    Blog
+  }
+};
 </script>
 <style>
 @import url("https://fonts.googleapis.com/css?family=DM+Serif+Text|Lexend+Mega|Pinyon+Script&display=swap");

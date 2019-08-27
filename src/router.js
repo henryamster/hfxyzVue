@@ -8,7 +8,8 @@ import Login from "./components/views/Login.vue";
 import Admin from "./components/views/Admin.vue";
 import store from "./store";
 import Blog from "./components/views/Blog.vue";
-import Entry from "./components/views/Entry.vue"
+import Entry from "./components/views/Entry.vue";
+import CreatePost from "./components/views/CreatePost.vue"
 Vue.use(Router);
 
 const router = new Router({
@@ -51,6 +52,14 @@ const router = new Router({
     { path: '/blog/:slug', 
       name: 'entry',
      component: Entry,
+    },
+    {
+      path:'/createpost',
+      name: 'createpost',
+      component: CreatePost,
+      meta: {
+        requiresAuth: true
+      }
     }
   ]
 });

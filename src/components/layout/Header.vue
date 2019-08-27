@@ -14,7 +14,9 @@
         <router-link class="navbar-item" to="/About">About</router-link>
         <router-link class="navbar-item" to="/Contact">Contact</router-link>
         <router-link class="navbar-item" to="/Projects">Projects</router-link>
+        <router-link class="navbar-item" to="/Blog">Blog</router-link>
         <router-link class="navbar-item" to="/Login">Login</router-link>
+         
       </template>
 
       <template slot="end">

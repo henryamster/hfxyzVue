@@ -6,6 +6,7 @@
     <div class="post-container column columns is-10 is-offset-1">
 <div :key="post" v-for="post in postCollection" class="column is-5">
    <Post :post="post"  />
+   
       <p></p>
       <hr>
     </div>

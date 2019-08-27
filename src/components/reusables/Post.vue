@@ -5,7 +5,7 @@
       </router-link>
       <img v-if="post.imageURL" :src="post.imageURL">
     <br/>
-      <p class="is-size-6 is-italic">{{post.posted}}</p>
+      <p class="is-size-6 is-italic">{{Date(post.posted).toLocaleString()}}</p>
       <p class="is-size-5 has-text-justified">{{post.content}}</p>
       <br/>
       <p>Learn more:</p>
@@ -27,6 +27,7 @@ export default {
     props:{
         post: Object
     }
+    
 }
 </script>
 
