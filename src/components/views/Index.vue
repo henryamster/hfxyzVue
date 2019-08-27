@@ -10,7 +10,7 @@
 
       <source src="https://i.imgur.com/Ua8bNJA.mp4" type="video/mp4">
     </video>
-        <div class="logo column is-8 is-offset-3">
+        <div class="logo column is-8 is-offset-3 " >
       <span class="logo-hf">
 Henry Fritz
       </span>
@@ -39,8 +39,19 @@ export default {};
         color:salmon;
      text-shadow:.03em .04em hsla(0deg,80%,42%, 0.6) ;
     margin: 0 auto;
+    animation:slide-in 1.3s ease-in;
 }
-
+@keyframes slide-in {
+  0%{
+    transform: rotateZ(45deg) rotateX(30deg) translateX(3em);
+  }
+   50%{
+    transform: rotateZ(-15deg) rotateX(10deg) translateY(-1.3em);
+  }
+  100%{
+    transform: rotateZ(0deg) rotateX(0deg);
+  }
+}
 .logo-hf{
  font-family: 'Pinyon Script';
      display: block;
