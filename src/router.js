@@ -13,8 +13,10 @@ import CreatePost from "./components/views/CreatePost.vue"
 Vue.use(Router);
 
 const router = new Router({
+  mode: 'history',
   routes: [
-    // { path: "*", redirect: "/404" },
+    
+     { path: "*", redirect: "/" },
     {
       path: "/",
       name: "index",
@@ -60,7 +62,8 @@ const router = new Router({
       meta: {
         requiresAuth: true
       }
-    }
+    },
+
   ]
 });
 
