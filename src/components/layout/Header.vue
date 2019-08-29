@@ -32,8 +32,24 @@
         </div>
       </template>
     </b-navbar>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50" preserveAspectRatio="none" class="header-clip"><polygon fill="#222" points="100,0  0,0 25,0 75,10 100,100"></polygon></svg>
   </div>
 </template>
 
 <style>
+.header-clip{
+    
+    background: rgba(241, 241, 241, 0);
+    position: absolute;
+    top: 76px;
+    z-index: 800;
+        /* stroke: #7e878e; */
+    
+}
+svg polygon{
+ 
+  width: 100%;
+  height: 32px;
+}
+
 </style>

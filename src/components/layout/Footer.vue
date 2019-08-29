@@ -1,18 +1,23 @@
 <template>
-  <footer class="footer">
+<div class="footer-container">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="footer-clip" preserveAspectRatio="none">
+    <polygon fill="white" points="100,0  0,0 100,100"/>
+  </svg>
+ <footer class="footer">
     <div class="content">
       <div>
-        <h1 class="has-text-centered">Henry Fritz Design & Development</h1>
+        <h1 class="has-text-centered dgray">Henry Fritz Design & Development</h1>
         <div class="columns">
-          <div class="column ">
-            <div class="column is-1 is-size-1 is-hidden-mobile">
+          <div class="column columns ">
+            <div class="column is-1 is-size-1 is-hidden-mobile left-arrow-pad-left">
                <a @click="goBack()"> ◀ </a>
             </div>
-            <div class="column is-4 ">
-              <ul class="unbulleted">
+            <div class="column is-6 info-block">
+              <ul class="unbulleted ">
                 <li>
-                  <strong class="is-size-4">Henry Fritz</strong>
-                  <p>Richmond, KY</p>
+                  <strong class="is-size-4  dgray">Henry Fritz</strong>
+                  <p class=" dgray">Richmond, KY</p>
                 </li>
                 <li>
                   <a
@@ -26,7 +31,7 @@
               </ul>
             </div>
           </div>
-          <div class="column is-3 is-size-2 has-text-centered">
+          <div class="column is-1 is-size-2 has-text-centered">
            <div class="navArrows is-hidden-tablet"><a @click="goBack()"> ◀ </a>
            <a @click="goForward()"> ▶ </a></div>
           </div>
@@ -43,6 +48,8 @@
       </div>
     </div>
   </footer>
+</div>
+ 
 </template>
 <script>
 export default {
@@ -60,3 +67,45 @@ export default {
   }
 }
 </script>
+<style>
+.left-arrow-pad-left{
+  margin-left:20px;
+}
+.dgray{
+  color: #7f888f !important;
+ 
+}
+@media (max-width: 768px) {
+
+}
+
+.info-block{
+ line-height: 1;
+}
+
+.footer-clip{background:var(--footer-grad-bottom);
+ position: absolute;
+  top:-30px;
+  }
+.footer-container{
+    position: relative;
+    margin-top:30px;
+  --footer-grad-bottom: #222;
+}
+svg {
+ 
+  width: 100%;
+  height: 32px;
+}
+footer{
+
+  /* transform: skewY(-2deg);
+  transform-origin: top left; */
+  padding: 0 !important;
+  background: linear-gradient(360deg, rgb(26, 26, 26), var(--footer-grad-bottom));
+  color:rgb(255, 255, 255) !important;
+}
+footer a{
+  color:#ffffff;
+}
+</style>
