@@ -12,7 +12,7 @@
         </p>
       </div>
       <div class="column is-4 level-item aos-init aos-animate" data-aos="fade-up-left">
-        <form action class>
+        <form action class="box">
           <ul>
             <li>
               <label>Name:</label>
@@ -133,6 +133,7 @@ export default {
 #contact {
   padding-top: 6em;
   padding-bottom: 2em;
+  margin: 8px;
 }
 label {
   font-size: 1.2em;

@@ -5,7 +5,7 @@
         <h1 class="has-text-centered">Henry Fritz Design & Development</h1>
         <div class="columns">
           <div class="column ">
-            <div class="column is-1 is-size-2 is-hidden-mobile">
+            <div class="column is-1 is-size-1 is-hidden-mobile">
                <a @click="goBack()"> ◀ </a>
             </div>
             <div class="column is-4 ">
@@ -37,7 +37,7 @@
               class="spin hand"
             >
           </div>
-          <div class="column is-1 is-size-2 is-hidden-mobile"> 
+          <div class="column is-1 is-size-1 is-hidden-mobile"> 
             <a @click="goForward()"> ▶ </a></div>
         </div>
       </div>

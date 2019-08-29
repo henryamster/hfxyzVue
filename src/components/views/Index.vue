@@ -1,16 +1,17 @@
 <template>
-  <div class="page has-background-primary autoheight">
+  <div class="page has-background-primaryautoheight">
     <video
       autoplay
       muted
       loop
       id="videoBG"
-      class="container reflect column is-paddingless is-marginless columnsh"
+      class="container reflect column is-paddingless is-marginless  videobg  columnsh"
     >
 
       <source src="https://i.imgur.com/Ua8bNJA.mp4" type="video/mp4">
     </video>
-        <div class="logo column is-8 is-offset-3 " >
+    <div class="logo-container">
+<div class="logo  " >
       <span class="logo-hf">
 Henry Fritz
       </span>
@@ -21,7 +22,9 @@ Henry Fritz
         Web Design/ Development, Graphic Design, &amp; 3D Motion Graphics
       </span>
     </div>
-    <Blog class="has-background-white"/>
+    </div>
+        
+    <Blog class="has-background-white" posts="2"/>
   </div>
 </template>
 
@@ -35,55 +38,85 @@ export default {
 </script>
 <style>
 @import url("https://fonts.googleapis.com/css?family=DM+Serif+Text|Lexend+Mega|Pinyon+Script&display=swap");
-.logo{
-    display: block;
-    color: white;
-    position: absolute;
-    top: 130px;
-    font-size: 32px;
-    padding-top:3em;
-        color:salmon;
-     text-shadow:.03em .04em hsla(0deg,80%,42%, 0.6) ;
-    margin: 0 auto;
-    animation:slide-in 1.3s ease-in;
+.logo-container{
+display: flex;
+  align-items: center;
+  justify-content: center;
+width:100%;
+  position: absolute;
+  top: 20%;
+  min-height:20vh;
+  
 }
-@keyframes slide-in {
+@keyframes stretcher {
   0%{
-    transform: rotateZ(45deg) rotateX(30deg) translateX(3em);
-  }
-   50%{
-    transform: rotateZ(-15deg) rotateX(10deg) translateY(-1.3em);
+  
+    border-radius: 0;
+    color:black;
+    box-shadow:-13px -13px rgba(26, 26, 26, 0.6);
   }
   100%{
-    transform: rotateZ(0deg) rotateX(0deg);
+    box-shadow:3px 3px rgba(26, 26, 26, 0.6);
+    
   }
 }
-.logo-hf{
- font-family: 'Pinyon Script';
-     display: block;
-     font-size: 2.8em;
-     font-weight: 800;
-     letter-spacing: -.055em;
-     line-height: .3em;
+.videobg{
 
-   animation: reflect 12s infinite;
+}
+.logo{
+   backdrop-filter: blur(1.3px) saturate(180%) contrast(190%) invert(100%) brightness(50%);
+    display: block;
+    color: rgba(250, 255, 226, 0.781);
+     margin: 40px auto 0 auto;
+       border:.4px rgba(114, 114, 114, 0.534) solid;
+     animation: stretcher 2s forwards;
+   animation-timing-function: linear;
+    font-size: 32px;
+       background: radial-gradient( rgba(146, 145, 145, 0.185) 60%, rgba(145, 145, 145, 0.548) 70%,rgba(247, 247, 247, 0.644) 90%);
+/* animation: reflect 7s infinite; */
+      display:inline-block;
+   border-radius: 4em;
+        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.445), .05em .04em rgba(214, 231, 167, 0.2), -.08em .08em rgba(252, 168, 168, 0.158);
+  
+     /* text-shadow:.  ;
+     filter:blur(.6px); */
+    text-align:center;
+    /* animation:slide-in 3.3s ease-in; */
+    padding:60px;
+    box-shadow:  inset 10 10 50px rgba(253, 253, 253, 0.966),3px 3px rgba(199, 199, 199, 0.6);
+}
+.logo-hf {
+  
+  
+margin-top: 40.1px;
+        font-family: 'Pinyon Script';
+    display: block;
+    font-size: 2.8em;
+    font-weight: 800;
+    line-height: 0.25em;
+   
+    z-index: 300;
+    padding: 2px;
+   
 }
 
-.logo-dd{
+.logo-dd {
   
     display: block;
-   font-family: 'Lexend Mega';
-     font-size: .75em;
-     padding-top:2em;
-     font-weight: 100;
-     animation: reflect 14s infinite;
+    font-family: 'Lexend Mega';
+    font-size: .75em;
+    padding-top: 2.2em;
+    line-height: 1.2em;
+    font-weight: 100;
+  
 }
 
-.logo-tl{
+.logo-tl {
     display: block;
-font-size: .36em;
-font-weight: 800;
-animation: reflect 16s infinite;
+    font-family: "Lexend Mega";
+    font-size: .41em;
+        letter-spacing: -0.255em;
+        
 }
 
 .logo--width {
@@ -131,13 +164,13 @@ animation: reflect 16s infinite;
 
 @keyframes reflect {
   0% {
-    filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg) invert(100%) blur(0px);
   }
   50% {
-    filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg) invert(100%) blur(.2px);
   }
   100% {
-    filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg) invert(100%) blur(0px);
   }
 }
 .spin {
@@ -149,9 +182,13 @@ animation: reflect 16s infinite;
 }
 @media screen and (max-width: 768px) {
   .logo{
-    font-size: 24px;
-    margin: 1.4em 1.4em;
-    padding-top: 0;
+    font-size: 18px;
+    padding-top:22px;
+     margin: 10px auto 0 auto;
+     transform: scale(0.85);
+  }
+  .logo-container{
+    top: 12%;
   }
   .iso-container {
     transform: scale(0.95);
@@ -169,7 +206,7 @@ animation: reflect 16s infinite;
 }
 @media screen and (min-width: 1024px) {
   .logo{
-    font-size: 48px;
+    font-size: 42px;
    
   }
 }

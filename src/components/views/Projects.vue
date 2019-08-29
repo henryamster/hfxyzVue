@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="column">
+    <div class="column ">
       <h2 class="pageAnchor">//Projects</h2>
     </div>
-    <h4>Work Projects</h4>
+    <h4 class="anc">Work Projects</h4>
     <div class="column work-projects columns">
       <Project
         title="Naming Convention Tool"
@@ -24,7 +24,7 @@
       />
       <div class="is-1 column"></div>
     </div>
-    <h4>Personal Projects</h4>
+    <h4 class="anc">Personal Projects</h4>
     <div class="column columns personal-projects">
       <Project
         title="Vue Personal Webpage"
@@ -46,8 +46,7 @@
       />
       <div class="is-1 column"></div>
     </div>
-    <h4>
-      Pens from
+    <h4 class="anc">Pens from
       <a href="https://codepen.io">Codepen</a>
     </h4>
     <div class="columns codepens">
@@ -76,4 +75,20 @@ export default {
   }
 };
 </script>
+<style >
+.anc{
+  font-size:2.3em;
+   text-align: center;
+  background:#222;
+  color:white;
+  font-weight: 800;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.anc::before, .anc::after{
+  content:"⌬";
+ font-weight: 100;
+ 
+}
+</style>
 

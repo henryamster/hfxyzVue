@@ -25,15 +25,18 @@ export default {
   min-height: 60vh;
 }
 .slide-fade-enter-active {
-   transition: all .7s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+   transition: all 1.7s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+   animation-timing-function: linear;
 }
 .slide-fade-leave-active {
-  transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  transition: all 1.4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  animation-timing-function: linear;
 }
 
 .slide-fade-enter{
   transform: rotateZ(-45deg) rotateX(30deg) translateY(-100%) translateX(-100%) scale(.14);
   opacity: 0;
+  
  
   
 }
@@ -41,11 +44,13 @@ export default {
  transform: translateX(0px);
  opacity: 1;
  
+ 
   
 }
 .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: rotateZ(-45deg) rotateX(30deg) translateY(100%) translateX(100%) scale(.14);
+  
    opacity: 0;
 }
 </style>

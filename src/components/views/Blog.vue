@@ -21,12 +21,18 @@ export default {
     components:{
         Post
     },
+    props:{
+      posts: {
+        type: String,
+        default: '6'
+      }
+    },
   data() {
     return { postCollection: [] };
   },
   mounted() {
     const db = this.$firebase.firestore();
-    db.collection("blog")
+    db.collection("blog").orderBy('posted', 'desc').limit(parseInt(this.posts))
       .get()
       .then(snap => {
         const postCollection = [];

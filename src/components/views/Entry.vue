@@ -2,11 +2,11 @@
     <div class="entry">
         <div class="column is-10 is-offset-1">
             <Post :post="post"/>
-            <p class="is-size-6">
+            <p class="is-size-6 post">
                 linkable address: https://henryfritz/xyz/blog/{{slug}}
             </p>
             <!-- {{JSON.stringify($route.params)}} -->
-            <router-link to="/blog"> Go back to blog</router-link> 
+            <router-link to="/blog" class="post"> Go back to blog</router-link> 
         </div>
 
     </div>
