@@ -45,7 +45,8 @@ export default {
 .pinyon{
     font-family: 'Lexend Mega';
     font-weight: 800;
-    font-size:4em;
+    font-size: 2em;
+    letter-spacing: -0.2em;
 }
 .date{
     font-size:.6em;

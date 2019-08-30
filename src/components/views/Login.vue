@@ -68,6 +68,7 @@ export default {
 <style>
 .loginForm {
   margin-top: 12em;
+  margin-bottom: 80px;
 }
 .notices.is-bottom {
   flex-direction: column-reverse;
@@ -100,4 +101,5 @@ export default {
 .is-success {
   background: yellowgreen;
 }
+
 </style>

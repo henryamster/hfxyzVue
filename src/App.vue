@@ -25,11 +25,11 @@ export default {
   min-height: 60vh;
 }
 .slide-fade-enter-active {
-   transition: all 1.7s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+   transition: all .6s cubic-bezier(1.0, 0.5, 0.8, 1.0);
    animation-timing-function: linear;
 }
 .slide-fade-leave-active {
-  transition: all 1.4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
   animation-timing-function: linear;
 }
 

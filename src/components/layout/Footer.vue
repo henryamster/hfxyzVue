@@ -7,7 +7,7 @@
  <footer class="footer">
     <div class="content">
       <div>
-        <h1 class="has-text-centered dgray">Henry Fritz Design & Development</h1>
+        <h1 class="has-text-centered dgray is-size-4">Henry Fritz Design & Development</h1>
         <div class="columns">
           <div class="column columns ">
             <div class="column is-1 is-size-1 is-hidden-mobile left-arrow-pad-left">
@@ -79,6 +79,7 @@ export default {
 
 }
 
+
 .info-block{
  line-height: 1;
 }
@@ -106,6 +107,10 @@ footer{
   color:rgb(255, 255, 255) !important;
 }
 footer a{
-  color:#ffffff;
+  color:#7f888f;
+  
+}
+footer a:hover{
+animation: pop .6s forwards;
 }
 </style>

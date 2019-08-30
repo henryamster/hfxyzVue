@@ -41,3 +41,8 @@ export default {
   },
 }
 </script>
+<style >
+ .entry{
+     margin-bottom:80px;
+ }
+</style>

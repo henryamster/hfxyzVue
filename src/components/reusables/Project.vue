@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <h3 class="is-size-3 pinyon">{{title}}</h3>
     <p class="is-size-7">{{subhead}}</p>
     <a v-if="link" :href="link">
@@ -31,6 +31,7 @@ export default {
 };
 </script>
 <style>
+
 .pinyon{
     font-family: 'Lexend Mega';
     font-weight: 800;

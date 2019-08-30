@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="projectView">
     <div class="column ">
       <h2 class="pageAnchor">//Projects</h2>
     </div>
@@ -89,6 +89,9 @@ export default {
   content:"⌬";
  font-weight: 100;
  
+}
+.projectView{
+  margin-bottom:80px;
 }
 </style>
 

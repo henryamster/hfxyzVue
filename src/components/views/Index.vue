@@ -64,9 +64,9 @@ width:100%;
 
 }
 .logo{
-   backdrop-filter: blur(1.3px) saturate(180%) contrast(190%) invert(100%) brightness(50%);
+   backdrop-filter:  blur(10.3px) saturate(180%) contrast(190%) invert(77%) brightness(162%);
     display: block;
-    color: rgba(250, 255, 226, 0.781);
+    color: rgb(250, 255, 226);
      margin: 40px auto 0 auto;
        border:.4px rgba(114, 114, 114, 0.534) solid;
      animation: stretcher 2s forwards;

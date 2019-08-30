@@ -42,7 +42,7 @@
     background: rgba(241, 241, 241, 0);
     position: absolute;
     top: 76px;
-    z-index: 800;
+    z-index: 8;
         /* stroke: #7e878e; */
     
 }
@@ -51,5 +51,38 @@ svg polygon{
   width: 100%;
   height: 32px;
 }
+.navbar-item:hover{
+animation: pop .9s forwards;
+}
+@keyframes pop {
+  0%{
+    color:#555;
+    font-weight:800;
+    border-bottom: 5px solid #555;
+    box-shadow: 2px 2px #555, -2px -2px #555;
+  }
+  100%{
+    color:#CCC;
+    border-bottom: .0px solid white;
+    box-shadow: 0;
+  }
+}
 
+.is-hoverable:hover .navbar-item{
+animation: slide-down .6s forwards;
+}
+
+.is-hoverable:hover .navbar-dropdown{
+animation: slide-down .4s forwards;
+}
+@keyframes slide-down {
+  0%{
+    transform: translateX(2%) scale(1.3) rotateZ(5deg);
+    transform-origin: 50% 100%;
+    color:#DDD;
+  }
+   100%{
+    transform: scale(1);
+  }
+}
 </style>
