@@ -4,6 +4,7 @@
       <p class=" pinyon">{{post.title}}</p>
       </router-link>
       <img v-if="post.imageURL" :src="post.imageURL" class="is-fullwidth is-marginless is-paddingless">
+        <Codepen v-if="post.codepen" :slug="post.codepen"></Codepen>
     <br/>
       <p class="has-text-link is-italic date">{{Date(post.posted).toLocaleString('en-US')}}</p>
       <p class="is-size-5 content">{{post.content}}</p>
@@ -23,7 +24,10 @@
     </div>
 </template>
 <script>
+import Codepen from './Codepen';
 export default {
+    
+    components:{ Codepen},
     props:{
         post: Object
     }

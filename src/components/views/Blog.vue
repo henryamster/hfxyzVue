@@ -3,13 +3,14 @@
  <div class="column">
       <h2 class="pageAnchor">//Blog</h2>
     </div>
-    <div class="post-container column columns is-10 is-offset-1">
-<div :key="post" v-for="post in postCollection" class="column is-5">
+    <div class="post-container is-fluid column columns is-10 is-offset-1 is-multiline">
+<div :key="post" v-for="post in postCollection" class="column is-6">
    <Post :post="post"  />
    
       <p></p>
       <hr>
     </div>
+    <div class="column is-1"></div>
     </div>
 </div>
        

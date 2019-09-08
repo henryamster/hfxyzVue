@@ -1,16 +1,8 @@
 import store from "./store";
 import Firebase from "firebase";
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 
-// const firebaseConfig = {
-//   apiKey: process.env.apiKey,
-//   authDomain: process.env.authDomain,
-//   databaseURL: process.env.databaseURL,
-//   projectId: process.env.projectId,
-//   storageBucket: process.env.storageBucket,
-//   messagingSenderId: process.env.messagingSenderId,
-//   appId: process.env.appId
-// };
+
 
 var firebaseConfig = {
   apiKey: "AIzaSyBk9TVjG5eHYUbwm6e50fhQvpISSek-8Pg",
@@ -21,7 +13,16 @@ var firebaseConfig = {
   messagingSenderId: "341982203008"
 };
 
-// firebase.initializeApp(firebaseConfig);
+// const firebaseConfig = {
+//   apiKey: process.env.VUE_APP_APIKEY,
+//   authDomain: process.env.VUE_APP_AUTHDOMAIN,
+//   databaseURL: process.env.VUE_APP_DATABASEURL,
+//   projectId: process.env.VUE_APP_PROJECTID,
+//   storageBucket: process.env.VUE_APP_STORAGEBUCKET,
+//   messagingSenderId: process.env.VUE_APP_MESSAGINGSENDERID,
+// };
+
+console.log(firebaseConfig);
 
 export default {
   install: (Vue, options) => {
