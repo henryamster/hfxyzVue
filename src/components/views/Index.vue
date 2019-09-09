@@ -53,10 +53,10 @@ width:100%;
   
     border-radius: 0;
     color:black;
-    box-shadow:-13px -13px rgba(26, 26, 26, 0.6);
+    /* box-shadow:-13px -13px rgba(26, 26, 26, 0.6); */
   }
   100%{
-    box-shadow:3px 3px rgba(26, 26, 26, 0.6);
+    /* box-shadow:3px 3px rgba(26, 26, 26, 0.6); */
     
   }
 }
@@ -64,19 +64,19 @@ width:100%;
 
 }
 .logo{
-   backdrop-filter:  blur(10.3px) saturate(180%) contrast(190%) invert(77%) brightness(162%);
+   /* backdrop-filter:  blur(10.3px) saturate(180%) contrast(190%) invert(77%) brightness(162%); */
     display: block;
-    color: rgb(250, 255, 226);
+    color: rgb(255, 255, 255);
      margin: 40px auto 0 auto;
-       border:.4px rgba(114, 114, 114, 0.534) solid;
+       /* border:.4px rgba(114, 114, 114, 0.534) solid; */
      animation: stretcher 2s forwards;
    animation-timing-function: linear;
     font-size: 32px;
-       background: radial-gradient( rgba(146, 145, 145, 0.185) 60%, rgba(145, 145, 145, 0.548) 70%,rgba(247, 247, 247, 0.644) 90%);
-/* animation: reflect 7s infinite; */
+       /* background: radial-gradient( rgba(146, 145, 145, 0.185) 60%, rgba(145, 145, 145, 0.548) 70%,rgba(247, 247, 247, 0.644) 90%);
+animation: reflect 7s infinite; */
       display:inline-block;
-   border-radius: 4em;
-        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.445), .05em .04em rgba(214, 231, 167, 0.2), -.08em .08em rgba(252, 168, 168, 0.158);
+   /* border-radius: 4em; */
+        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.445), .05em .04em rgba(49, 49, 49, 0.2), -.08em .08em rgba(252, 168, 168, 0.158);
   
      /* text-shadow:.  ;
      filter:blur(.6px); */
@@ -164,13 +164,13 @@ margin-top: 40.1px;
 
 @keyframes reflect {
   0% {
-    filter: hue-rotate(0deg) invert(100%) blur(0px);
+    filter:brightness(160%)  hue-rotate(150deg) invert(100%) blur(0px) contrast(73%);
   }
   50% {
-    filter: hue-rotate(360deg) invert(100%) blur(.2px);
+    filter:brightness(160%)  hue-rotate(180deg) invert(100%) blur(.2px) contrast(73%);
   }
   100% {
-    filter: hue-rotate(0deg) invert(100%) blur(0px);
+    filter: brightness(160%) hue-rotate(150deg) invert(100%) blur(0px) contrast(73%);
   }
 }
 .spin {

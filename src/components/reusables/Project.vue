@@ -33,9 +33,8 @@ export default {
 <style>
 
 .pinyon{
-    font-family: 'Lexend Mega';
-    font-weight: 800;
-    font-size:3em;
+    
+    font-size:2em;
 }
 p.link-project {
   text-align: center;

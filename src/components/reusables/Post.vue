@@ -41,7 +41,7 @@ export default {
 }
 </script>
 <style >
-@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text|Lexend+Mega|Pinyon+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text|Quicksand|Pinyon+Script&display=swap");
 .post{
     padding:8px;   
     border-radius:8px;
@@ -53,10 +53,11 @@ export default {
     word-spacing: 2px;
 }
 .pinyon{
-    font-family: 'Lexend Mega';
-    font-weight: 800;
-    font-size: 2em;
-    letter-spacing: -0.2em;
+    font-family: 'Quicksand';
+    font-weight: 100;
+  
+    line-height:1.4em;
+    font-size:2em;
 }
 .date{
     font-size:.6em;
