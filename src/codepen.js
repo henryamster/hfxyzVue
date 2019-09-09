@@ -142,6 +142,7 @@ vCodePen.install = function install(Vue) {
         } else e.innerHTML = n;
       }
       function m() {
+        
         "function" == typeof __CodePenIFrameAddedToPage &&
           __CodePenIFrameAddedToPage();
       }

@@ -86,7 +86,7 @@ export default {
 
 .footer-clip{background:var(--footer-grad-bottom);
  position: absolute;
-  top:-30px;
+    top:-30px;
   }
 .footer-container{
     position: relative;

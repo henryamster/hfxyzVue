@@ -3,12 +3,13 @@
     <div class="column is-12 has-text-centered">
       <router-link to="/CreatePost" class="button is-primary">Create New Blog Post</router-link>
     </div>
-    <div :key="inq" v-for="inq in inquiriesCollection">
+    <div :key="inq.name" v-for="inq in inquiriesCollection">
       <h2 class="is-size-2">{{inq.name}}</h2>
       <p class="is-size-4 is-italic">{{inq.email}}</p>
       <p class="is-size-4">{{inq.phone}}</p>
       <p class="is-size-6">{{inq.message}}</p>
-      <hr>
+      <a v-on:click="archive(inq.name)" class="button">Archive Inquiry</a>
+      <hr />
     </div>
     <a v-on:click="logout" class="button is-primary">log out</a>
   </div>
@@ -27,10 +28,42 @@ export default {
         snap.forEach(doc => {
           inquiriesCollection.push(doc.data());
         });
-        this.inquiriesCollection = inquiriesCollection;
+        //eliminate archived inquiries
+        this.inquiriesCollection = inquiriesCollection.filter(
+          inq => !inq.archived
+        );
       });
   },
   methods: {
+    archive(name) {
+      const self = this;
+      let selectedInq;
+      const db = this.$firebase.firestore();
+      let inqueryRef = db.collection("inquiries");
+      inqueryRef
+        .where("name", "==", name)
+        .get()
+        .then(snap => {
+          snap.forEach(doc => {
+            selectedInq = doc.id;
+            inqueryRef
+              .doc(selectedInq)
+              .update({
+                archived: true
+              })
+              .then(
+                () => {
+                  self.inquiriesCollection = self.inquiriesCollection.filter(
+                    inq => !inq.name == name
+                  );
+                  console.log("d");
+                },
+                err => self.danger(err)
+              );
+          });
+        });
+    },
+
     danger(msg) {
       this.$buefy.toast.open({
         duration: 5000,

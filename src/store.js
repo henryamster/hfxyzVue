@@ -1,7 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import { vuexfireMutations, firestoreAction } from "vuexfire";
-import { firebaseAction } from "vuexfire";
 import db from "firebase";
 
 Vue.use(Vuex);

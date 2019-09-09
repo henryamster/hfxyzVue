@@ -4,8 +4,11 @@
       <p class=" pinyon">{{post.title}}</p>
       </router-link>
       <img v-if="post.imageURL" :src="post.imageURL" class="is-fullwidth is-marginless is-paddingless">
+        <Codepen v-if="post.codepen" :slug="post.codepen"></Codepen>
     <br/>
-      <p class="has-text-link is-italic date">{{Date(post.posted).toLocaleString('en-US')}}</p>
+      <p class="has-text-link is-italic date">Posted: {{new Date(post.posted.seconds*1000)}}</p>
+      <p class="has-text-link is-italic date" v-if="post.edited">Last Edited: {{new Date(post.posted.seconds*1000)}}</p>
+       <router-link v-if="user" :to="'/editpost/'+post.slug" class="button">Edit</router-link>
       <p class="is-size-5 content">{{post.content}}</p>
       <br/>
       <p class="is-bold">Learn more:</p>
@@ -23,15 +26,22 @@
     </div>
 </template>
 <script>
+import Codepen from './Codepen';
+import store from '../../store';
 export default {
+    
+    components:{ Codepen},
     props:{
         post: Object
+    },
+    data:function(){return {
+        user:store.state.user
     }
-    
+    } 
 }
 </script>
 <style >
-@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text|Lexend+Mega|Pinyon+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text|Quicksand|Pinyon+Script&display=swap");
 .post{
     padding:8px;   
     border-radius:8px;
@@ -43,10 +53,11 @@ export default {
     word-spacing: 2px;
 }
 .pinyon{
-    font-family: 'Lexend Mega';
-    font-weight: 800;
-    font-size: 2em;
-    letter-spacing: -0.2em;
+    font-family: 'Quicksand';
+    font-weight: 100;
+  
+    line-height:1.4em;
+    font-size:2em;
 }
 .date{
     font-size:.6em;
