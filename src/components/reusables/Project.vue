@@ -34,7 +34,7 @@ export default {
 
 .pinyon{
     
-    font-size:2em;
+    
 }
 p.link-project {
   text-align: center;

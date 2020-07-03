@@ -4,7 +4,27 @@
       <h2 class="pageAnchor">//Projects</h2>
     </div>
     <h4 class="anc">Work Projects</h4>
-    <div class="column work-projects columns">
+     <div class="column work-projects columns">
+        <Project
+        title="CBVT"
+        subhead="EKU Training Resource Center, Richmond, KY"
+        description="Built an angular application on top of a .NET backend to meet contract requirements for keeping track of community and faith-based volunteers who assist with parental visitation in Kentucky."
+        img="https://i.imgur.com/rlI9myD.jpg"
+        class="column is-5 is-offset-1"
+        v-bind:tags="['ES6', 'Angular', 'RxJS', 'Sass', 'Azure DevOps', 'NgMaterial', '.NET','C#']"
+      />
+
+        <Project
+        title="Respite Care Network"
+        subhead="EKU Training Resource Center, Richmond, KY"
+        description="Created the front-end for an application that tracks the status of training, certification, and availability of respite providers for foster and adoptive parents in the state of Kentucky."
+        img="https://i.imgur.com/Ah3Q6cn.jpg"
+        class="column is-5 "
+        v-bind:tags="['ES6', 'Angular', 'RxJS', 'Sass', 'Azure DevOps', 'NgMaterial', '.NET','C#']"
+      />
+      <div class="is-1 column"></div>
+    </div>
+     <div class="column work-projects columns">
       <Project
         title="Naming Convention Tool"
         subhead="Meijer Infrastructure, Grand Rapids, MI"
@@ -25,7 +45,7 @@
       <div class="is-1 column"></div>
     </div>
     <h4 class="anc">Personal Projects</h4>
-    <div class="column columns personal-projects">
+   <div class="column columns personal-projects">
       <Project
         title="Vue Personal Webpage"
         subhead="It's this site!"
@@ -45,6 +65,18 @@
         v-bind:tags="['ES6', 'puppeteer']"
       />
       <div class="is-1 column"></div>
+    </div>
+    <div class="column columns personal-projects">
+       <Project
+        title="AT&T Broadband Connectivity Analysis"
+        subhead="Tracking and displaying data for my home connection"
+        description="A home-built tool that pulls data from both the local computer using node, and fetching gateway data from the associated router as a CRON job, parsing it and analyzing/displaying data egress/ingress over time. "
+        class="column is-5 is-offset-1"
+        img="https://i.imgur.com/edBobng.jpg"
+        v-bind:tags="['Node', 'node-cron', 'DOMParser', 'Vue', 'Bulma', 'jQuery', 'Cheerio', 'JSON']"
+      />
+       <div class="is-3 column"></div>
+      
     </div>
     <h4 class="anc">Pens from
       <a href="https://codepen.io">Codepen</a>

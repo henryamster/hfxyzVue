@@ -1,7 +1,7 @@
 <template>
     <div class="entry">
         <div class="column is-10 is-offset-1">
-            <Post :post="post"/>
+            <Post :post="post" class="entrySize"/>
             <p class="is-size-6 post">
                 linkable address: https://henryfritz/xyz/blog/{{slug}}
             </p>
@@ -44,5 +44,9 @@ export default {
 <style >
  .entry{
      margin-bottom:80px;
+     
+ }
+ .entrySize{
+     font-size:23px;
  }
 </style>

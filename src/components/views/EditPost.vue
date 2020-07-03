@@ -17,6 +17,8 @@
         <b-input v-model="post.imageURL"></b-input>
         <label for="codepen">Codepen:</label>
         <b-input v-model="post.codepen"></b-input>
+        <label for="youtube">Youtube:</label>
+        <b-input v-model="post.youtube"></b-input>
         <label for="tags">tags:</label>
         <b-taginput v-model="post.tags" name="tags"></b-taginput>
 
@@ -79,7 +81,7 @@ export default {
         content: this.post.content,
         imageURL: this.post.imageURL,
         codepen: this.post.codepen,
-        posted: new Date(),
+        posted: this.post.posted,
         links:
           this.post.links.indexOf(",") > 0
             ? this.post.links.split(",")

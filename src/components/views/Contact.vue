@@ -8,7 +8,7 @@
         <h2 class="is-size-2">Want to get in contact?</h2>
         <p>
           The best way to get ahold of me is by
-          <a href="mailto:henryamsterfritz@gmail.com">email</a> or by filling out this form. I do have a phone but I do not have voicemail, sorry!
+          <a href="mailto:henryamsterfritz@gmail.com">email</a> or by filling out this form.
         </p>
       </div>
       <div class="column is-4 level-item aos-init aos-animate" data-aos="fade-up-left">

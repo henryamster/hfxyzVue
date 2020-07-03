@@ -13,6 +13,7 @@
 
 <label for="imageURL">image URL:</label> <b-input v-model="imageURL"  ></b-input>
 <label for="codepen">Codepen:</label><b-input v-model="codepen"  ></b-input>
+<label for="youtube">Youtube:</label><b-input v-model="youtube"  ></b-input>
 <label for="tags">tags:</label> <b-taginput v-model="tags"  name="tags"></b-taginput>
 
 <label for="linkURLs">links:</label> <b-taginput v-model="linkURLs"  name="linkURLs"></b-taginput>
@@ -29,10 +30,11 @@
 
 <script>
 import Post from '../reusables/Post';
+
 export default {
     components: {Post},
     data() {
-        return {title: '', content: '', imageURL: '', codepen : "", posted: new Date(), linkURLs: [], tags: [], slug:''}
+        return {title: '', content: '', imageURL: '', codepen : "", youtube:"",  posted: new Date(), linkURLs: [], tags: [], slug:''}
     },
     computed: {
         postCollator(){
@@ -40,6 +42,7 @@ export default {
             content: this.content,
             imageURL: this.imageURL,
             codepen: this.codepen,
+            youtube: this.youtube,
             posted: new Date(),
             links: this.linkURLs.indexOf(',') > 0 ? this.linkURLs.split(',') : this.linkURLs,
             tags: this.tags.indexOf(',') > 0 ? this.tags.split(','): this.tags,
@@ -83,6 +86,7 @@ export default {
       this.content = "";
       this.imageURL = "";
       this.codepen= "";
+      this.youtube= "";
       this.linkURLs = [];
       this.tags =[];
     this.slug="";

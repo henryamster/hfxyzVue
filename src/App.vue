@@ -22,9 +22,16 @@ export default {
 </script>
 
 <style>
+
 .min-100 {
   min-height: 60vh;
 }
+
+.navbar-burger{
+margin-left: auto;
+margin-right:30px;
+}
+
 .slide-fade-enter-active {
    transition: all .6s cubic-bezier(1.0, 0.5, 0.8, 1.0);
    animation-timing-function: linear;

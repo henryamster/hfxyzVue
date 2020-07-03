@@ -6,12 +6,12 @@
         class="is-4 is-offset-1 column level-item has-text-centered aos-init aos-animate"
         data-aos="zoom-in"
       >
-        <img src="https://i.imgur.com/Jr2QTMf.jpg" alt="Photo of Henry Fritz" class="shad">
+        <img src="../../assets/me.png" alt="Photo of Henry Fritz" class="shad">
         <h1 class="is-size-2">Howdy!</h1>
         <br>
         <p
           class="has-text-left"
-        >My name is Henry Fritz. I'm a web designer/developer. I dabble in graphic design and 3D motion graphics, and in my spare time I like to play, write, and record music. I currently live in my hometown of Richmond, Ky, where I graduated from Eastern Kentucky University. I love javascript and the front end, but will not shy away from building APIs or creating DB schemas.</p>
+        >My name is Henry Fritz. I'm a web designer/developer. I dabble in graphic design and 3D motion graphics and in my spare time I like to play, write, and record music. I currently live in my hometown of Richmond, Ky, where I graduated from Eastern Kentucky University. <br/> <br/>I am a Javascript Developer at EKU's Training Resource Center where I build enterprise front-end applications on top of a .Net/SQL stack. </p>
         <p></p>
       </div>
       <div class="is-6 column level-item aos-init aos-animate" data-aos="flip-down">
@@ -27,6 +27,11 @@
         <br>
         <hr>
         <h3>Work Experience</h3>
+        <h4 class="is-size-4">EKU Training Resource Center</h4>
+        <p class="is-italic"> Sr. Programmer Analyst</p>
+        <p>November 2019- Current</p>
+        <br>
+
         <p data-aos="fade-left" class="aos-init aos-animate"></p>
         <h4 class="is-size-4">Meijer</h4>
         <p class="is-italic">Cloud Infrastructure Intern</p>

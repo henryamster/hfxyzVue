@@ -3,9 +3,9 @@
     <b-navbar>
       <template slot="brand">
         <router-link to="/" class="navbar-brand">
-          <a class="navbar-item is-size-1 column">
+          <a class="navbar-item is-size-1">
             HF
-            <span class="is-size-7 column logo--width">Henry Fritz Design & Development</span>
+            <span class="is-size-7 logo--width">Henry Fritz Design & Development</span>
           </a>
         </router-link>
       </template>
@@ -37,6 +37,11 @@
 </template>
 
 <style>
+.logo--width{
+  padding:0;
+  padding-left:2px;
+  
+}
 .header-clip{
     
     background: rgba(241, 241, 241, 0);
@@ -51,6 +56,7 @@ svg polygon{
   width: 100%;
   height: 32px;
 }
+
 .navbar-item:hover{
 animation: pop .9s forwards;
 }
@@ -61,9 +67,12 @@ animation: pop .9s forwards;
     border-bottom: 5px solid #555;
     box-shadow: 2px 2px #555, -2px -2px #555;
   }
+  99%{
+    border: 0px;
+  }
   100%{
     color:#CCC;
-    border-bottom: .0px solid white;
+    border-bottom: 0;
     box-shadow: 0;
   }
 }
