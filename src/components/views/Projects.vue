@@ -111,13 +111,14 @@ export default {
 </script>
 <style >
 .anc{
-  font-size:2.3em;
-   text-align: center;
-  background:#222;
-  color:white;
-  font-weight: 800;
-  padding: 1em;
-  margin-bottom: 1em;
+     font-size: 2.3em;
+    text-align: center;
+    background: #c3c3c3;
+    color: white;
+    font-weight: 800;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 1px 6px 7px 3px #bdbdbd;
 }
 .anc::before, .anc::after{
   content:"⌬";

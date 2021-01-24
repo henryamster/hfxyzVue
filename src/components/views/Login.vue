@@ -4,7 +4,7 @@
       <h2 class="pageAnchor">//Log In</h2>
     </div>
 
-    <div class="column is-offset-2 is-8 loginForm">
+    <div class="column is-offset-2 is-8 loginForm post slide-from-left">
       <br>
       <b-field label="Name">
         <b-input v-model="email" placeholder="email"></b-input>

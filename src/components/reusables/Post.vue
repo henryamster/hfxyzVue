@@ -55,13 +55,12 @@ export default {
 <style >
 @import url("https://fonts.googleapis.com/css?family=Trirong|DM+Serif+Text|Quicksand|Pinyon+Script&display=swap");
 .post{
-   padding: 24px;
-
+    padding: 21px;
+    -webkit-box-shadow: 2px 2px 3px 2px #eee, inset -5px -5px 10px 3px #cecece;
     box-shadow: 2px 2px 3px 2px #eee, inset -5px -5px 10px 3px #cecece;
     /* border: 2px solid #8e8e8e78; */
-    margin:8px;
-    
-    border-radius:18px;
+    margin: 3px;
+    border-radius: 18px;
 }
 .content{
     padding-top:25px;
@@ -69,6 +68,7 @@ export default {
     word-spacing: 2px;
 }
 .pinyon{
+        font-variant-caps: petite-caps;
   -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     color: grey;

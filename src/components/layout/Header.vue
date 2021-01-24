@@ -63,6 +63,12 @@ svg polygon{
 .navbar-item:hover{
 animation: pop .9s forwards;
 }
+
+@media screen and (min-width: 1088px){
+.navbar-dropdown {
+background: #c3c3c3;;
+}
+}
 @keyframes pop {
   0%{
     color:#555;

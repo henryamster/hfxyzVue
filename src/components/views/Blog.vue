@@ -8,7 +8,7 @@
    <Post :post="post" v-bind:class="index%2==0? 'slide-from-left': 'slide-from-right' "/>
    
       <p></p>
-      <hr>
+      <!-- <hr> -->
     </div>
     <div class="column is-1"></div>
     </div>

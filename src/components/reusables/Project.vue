@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div class="post">
     <h3 class="is-size-3 pinyon">{{title}}</h3>
     <p class="is-size-7">{{subhead}}</p>
     <a v-if="link" :href="link">

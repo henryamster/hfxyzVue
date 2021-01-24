@@ -1,16 +1,16 @@
 <template>
-  <div class="page has-background-primaryautoheight  ">
-    <!-- <video
+  <div class="page has-background-primaryautoheight bgcycle">
+    <video
       autoplay
       muted
       loop
       id="videoBG"
-      class="container reflect column is-paddingless is-marginless videobg columnsh"
+      class="container inv column is-paddingless is-marginless videobg columnsh"
     >
       <source src="https://i.imgur.com/e3nMuy8.mp4" type="video/mp4" />
-    </video> -->
-    <div class="landing"></div>
-    <div class="logo-container">
+    </video>
+    
+    <div class="logo-container slide-from-left">
       <div class="logo">
         <span class="logo-hf">Henry&nbsp;Fritz</span>
         <span class="logo-dd">Design &amp; Development</span>
@@ -19,6 +19,9 @@
     </div>
 
     <Blog class="has-background-white" posts="2" />
+    <!-- <div class="landing">
+<img src="/img/me.0abd350e.png" alt="Photo of Henry Fritz" class="landingPhoto">
+    </div> -->
   </div>
 </template>
 
@@ -32,17 +35,29 @@ export default {
 </script>
 <style>
 @import url("https://fonts.googleapis.com/css?family=DM+Serif+Text|Lexend+Mega|Pinyon+Script&display=swap");
+img{
+      box-shadow: 0px 4px 6px 1px #1515152e;
+}
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   top: 20%;
   min-height: 20vh;
 }
 .landing{
-  min-height:80vh;
+display: flex;
+    align-content: center;
+    width: 100vh;
+    transform: translateY(6px);
+}
+img.landingPhoto {
+    height: 211px;
+    /* z-index: 80000000; */
+    transform: translateX(-37px)translateY(41px)rotateZ(10deg);
+    opacity: 8%;
 }
 @keyframes stretcher {
   0% {
@@ -63,35 +78,35 @@ export default {
 }
 .bgcycle {
   
-  animation: bgcyc 3s infinite ;
+  animation: bgcyc 13s infinite ;
   /* animation-timing-function: linear; */
 }
 @keyframes bgcyc{
 0%
 {
-background: #ff3860;
+filter: hue-rotate(0deg);
 }
 20%{
-background: #3f325e;
+filter: hue-rotate(360deg);
 }
 40%{
-background: #96bdcf;
+filter: hue-rotate(720deg);
 }
 60%{
-background: #ffed48;
+filter: hue-rotate(900deg);
 }
 80%{
-background: #ff8045;
+filter: hue-rotate(1080deg);
 }
 100%{
-background: #ff3860;
+filter: hue-rotate(1540deg);
 }
 }
 .logo {
   /* backdrop-filter:  blur(10.3px) saturate(180%) contrast(190%) invert(77%) brightness(162%); */
   display: block;
   color: rgb(37, 32, 32);
-  margin: 40px auto 0 auto;
+  /* margin: 40px auto 0 auto; */
   /* border:.4px rgba(114, 114, 114, 0.534) solid; */
   animation: stretcher 2s forwards;
   animation-timing-function: linear;
@@ -108,7 +123,7 @@ background: #ff3860;
      filter:blur(.6px); */
   text-align: center;
   /* animation:slide-in 3.3s ease-in; */
-  padding: 60px;
+  padding: 40px;
   box-shadow: inset 10 10 50px rgba(253, 253, 253, 0.966),
     3px 3px rgba(199, 199, 199, 0.6);
 }
@@ -195,12 +210,15 @@ background: #ff3860;
       contrast(73%);
   }
 }
+.inv{
+  filter: hue-rotate(40deg);
+}
 .spin {
-  animation: spin 2s infinite;
+  /* animation: spin 2s infinite; */
 }
 .reflect {
-  animation: reflect 7s infinite;
-  animation-timing-function: linear;
+  /* animation: reflect 7s infinite;
+  animation-timing-function: linear; */
 }
 @media screen and (max-width: 768px) {
   .logo {

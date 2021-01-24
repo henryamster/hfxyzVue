@@ -11,8 +11,8 @@
         <br>
         <p
           class="has-text-left margin-10 slide-from-left"
-        >My name is Henry Fritz. I specialize in designing web software from prototype to schema to finished product. I love working directly with customers to build the software that works for them they way they want it to. I live in my hometown of Richmond, Ky, where I work primarily on enterprise applications utilizing the .Net, SQL, and Angular stack.  </p>
-        <p class="has-text-left margin-10 slide-from-left"> In my spare time I love to work on 3d graphics, algorithmic artwork, and writing, playing, and recording music. Before becoming a full-time developer, I've had an interesting mix of life and job experience including deejaying at a college radio station, being a picker in an amazon warehouse, and nearly a decade of experience in the retail industry with job titles ranging from clerk to manager to infrastructure architect intern. 
+        >My name is Henry Fritz. I specialize in designing web software from prototype to schema to finished product. I love working directly with customers to build the software that works for them they way they want it to. I live in my hometown of Richmond, Ky, where I work primarily on enterprise applications at EKU's Training Resource Center utilizing the .Net, SQL, and Angular stack.  </p>
+        <p class="has-text-left margin-10 slide-from-left"> In my spare time I enjoy working on 3d graphics, algorithmic artwork, and writing, playing, and recording music. Before becoming a full-time developer, I've had an interesting mix of life and job experience including volunteering at a college radio station, being a picker in an amazon warehouse, writing and performing songs with bands,  and nearly a decade of experience in the retail industry with job titles ranging from clerk to manager to infrastructure architect intern. 
           <p class="has-text-left margin-10 slide-from-left">
 
           </p>
