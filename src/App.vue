@@ -4,6 +4,7 @@
     <transition name="slide-fade">
     <router-view class="min-100 card"/>
     </transition>
+    <link href="https://cdn.quilljs.com/1.2.6/quill.snow.css" rel="stylesheet">
     <Footer/>
   </div>
 </template>
@@ -22,6 +23,7 @@ export default {
 </script>
 
 <style>
+
 #app{
   background: linear-gradient(45deg, #eeeeee, #98989880);
 }

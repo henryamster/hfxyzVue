@@ -25,7 +25,7 @@ export default {
     props:{
       posts: {
         type: String,
-        default: '6'
+        default: '8'
       }
     },
   data() {

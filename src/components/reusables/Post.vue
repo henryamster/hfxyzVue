@@ -10,12 +10,13 @@
       <p class="has-text-link is-italic date">Posted: {{new Date(post.posted.seconds*1000)}}</p>
       <p class="has-text-link is-italic date" v-if="post.edited">Last Edited: {{new Date(post.edited.seconds*1000)}}</p>
        <router-link v-if="user" :to="'/editpost/'+post.slug" class="button">Edit</router-link>
-      <p class="is-size-5 content">{{post.content}}</p>
+       <div class="is-size-5 content" v-html="post.content"></div>
+      <!-- <p class="is-size-5 content">{{post.content}}</p> -->
       <br/>
       <p class="is-bold">Learn more:</p>
       <ul>
           <li :key="link" v-for="link in post.links" class="tag">
-              <a :href="link" >{{link.substr(0,25)+'...'}}</a>
+              <a :href="link" >{{link.substr(0,10)+'...'}}</a>
           </li>
       </ul>
       <p>Tagged: 
@@ -56,8 +57,9 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Trirong|DM+Serif+Text|Quicksand|Pinyon+Script&display=swap");
 .post{
     padding: 21px;
-    -webkit-box-shadow: 2px 2px 3px 2px #eee, inset -5px -5px 10px 3px #cecece;
-    box-shadow: 2px 2px 3px 2px #eee, inset -5px -5px 10px 3px #cecece;
+  
+   box-shadow: 5px 2px 13px 8px #efdddd61, -5px 1px 10px 5px #d3e2e2b3;
+
     /* border: 2px solid #8e8e8e78; */
     margin: 3px;
     border-radius: 18px;

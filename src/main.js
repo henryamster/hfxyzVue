@@ -6,9 +6,13 @@ import router from "./router";
 import vCodePen from "./codepen";
 import firebase from "./firebase";
 import VueAnalytics from 'vue-analytics';
+import VueQuill from 'vue-quill'
+
+ 
+Vue.use(VueQuill);
 
 Vue.use(VueAnalytics, {
-  id: 'G-ERRTGK3DY2'
+  id: 'UA-111724736-1'
 })
 
 Vue.use(firebase);

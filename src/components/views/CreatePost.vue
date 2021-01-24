@@ -9,7 +9,9 @@
 <label for="title">title:</label> <b-input v-model="title"  name="title"></b-input>
 <label for="slug">slug:</label> <b-input v-model="slug"  name="slug"></b-input>
 <label for="content">content:</label>
-<b-input type="textarea" v-model="content" name="content" id="content" rows="12"></b-input>
+<!-- <b-input type="textarea" v-model="content" rows="12"></b-input> -->
+<quill v-model="content" output="html"  name="content" id="content"></quill>
+    
 
 <label for="imageURL">image URL:</label> <b-input v-model="imageURL"  ></b-input>
 <label for="codepen">Codepen:</label><b-input v-model="codepen"  ></b-input>

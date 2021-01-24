@@ -11,8 +11,8 @@
         <label for="slug">slug:</label>
         <b-input v-model="post.slug" name="slug"></b-input>
         <label for="content">content:</label>
-        <b-input type="textarea" v-model="post.content" name="content" id="content" rows="12"></b-input>
-
+       <quill v-model="post.content" output="html"  name="content" id="content"></quill>
+    
         <label for="imageURL">image URL:</label>
         <b-input v-model="post.imageURL"></b-input>
         <label for="codepen">Codepen:</label>

@@ -1,13 +1,15 @@
 <template>
-  <div class="page has-background-primaryautoheight bgcycle">
+  <div class="page has-background-primaryautoheight ">
     <video
       autoplay
       muted
       loop
       id="videoBG"
-      class="container inv column is-paddingless is-marginless videobg columnsh"
+      class=" inv column is-paddingless is-marginless videobg columnsh"
     >
-      <source src="https://i.imgur.com/e3nMuy8.mp4" type="video/mp4" />
+      <!-- <source src="https://i.imgur.com/e3nMuy8.mp4" type="video/mp4" /> -->
+       <source src="  https://firebasestorage.googleapis.com/v0/b/henryfritz-30302.appspot.com/o/bon.m4v?alt=media&token=402395e0-7ca7-447d-aacd-1173a084ac3a" type="video/mp4" />
+    
     </video>
     
     <div class="logo-container slide-from-left">
@@ -78,28 +80,17 @@ img.landingPhoto {
 }
 .bgcycle {
   
-  animation: bgcyc 13s infinite ;
+  animation: bgcyc 30s infinite ;
   /* animation-timing-function: linear; */
 }
 @keyframes bgcyc{
 0%
 {
-filter: hue-rotate(0deg);
+filter: hue-rotate(0deg) invert(100%);
 }
-20%{
-filter: hue-rotate(360deg);
-}
-40%{
-filter: hue-rotate(720deg);
-}
-60%{
-filter: hue-rotate(900deg);
-}
-80%{
-filter: hue-rotate(1080deg);
-}
+
 100%{
-filter: hue-rotate(1540deg);
+filter: hue-rotate(1540deg) invert(100%);
 }
 }
 .logo {
@@ -128,31 +119,32 @@ filter: hue-rotate(1540deg);
     3px 3px rgba(199, 199, 199, 0.6);
 }
 .logo-hf {
-  margin-top: 40.1px;
-  font-family: "Pinyon Script";
-  display: block;
-  font-size: 2.8em;
-  font-weight: 600;
-  line-height: 0.15em;
-  z-index: 300;
-  padding: 2px;
+    margin-top: 63.1px;
+    font-family: "Pinyon Script";
+    display: block;
+    font-size: 3.6em;
+    font-weight: 800;
+    line-height: 0.55em;
+    z-index: 300;
+    padding: 2px;
 }
 
 .logo-dd {
-  display: block;
-  font-family: "Quicksand";
-  font-size: 0.75em;
-  padding-top: 2.2em;
-  line-height: 1em;
-  font-weight: 100;
-  letter-spacing: 10px;
+     display: block;
+    font-family: "Quicksand";
+    font-size: 1.75em;
+    /* padding-top: 2.2em; */
+    line-height: -0.1em;
+    font-weight: 100;
+    letter-spacing: -3px;
 }
 
 .logo-tl {
-  display: block;
-  font-family: "Quicksand";
-  font-size: 0.41em;
-  letter-spacing: 0.045em;
+        display: block;
+    font-family: "Quicksand";
+    font-size: .6em;
+    letter-spacing: -0.055em;
+    line-height: .3;
 }
 
 .logo--width {
@@ -166,13 +158,13 @@ filter: hue-rotate(1540deg);
 }
 .container {
   min-height: 30vh;
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg,
     rgba(170, 215, 241, 1) 0%,
     rgba(215, 133, 133, 1) 55%,
     rgba(189, 189, 189, 1) 78%,
     rgba(192, 235, 209, 1) 97%
-  );
+  ); */
   overflow: hidden;
   min-width: 100%;
 }
@@ -211,7 +203,33 @@ filter: hue-rotate(1540deg);
   }
 }
 .inv{
-  filter: hue-rotate(40deg);
+    filter: invert(100%) hue-rotate(-141deg) drop-shadow(53px 6px 20px rgb(75,75,75));
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-height: 60vh;
+    border-radius: 0 0% 80px 80px;
+    
+    box-shadow: 4px 1px 6px 5px #4c4c4c;
+    background: linear-gradient(45deg, #131313, #272727);
+    width: 80%;
+    margin-left: 10% !important;
+    animation: slideIn 3s;
+}
+@keyframes slideIn{
+  0%{
+    transform: translateY(-300%);
+  opacity: 0%;
+  }
+  29%{
+    opacity: 0%;
+  }
+  30%{
+    opacity: 100%;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 100%;
+  }
 }
 .spin {
   /* animation: spin 2s infinite; */
@@ -249,6 +267,7 @@ filter: hue-rotate(1540deg);
     font-size: 42px;
   }
 }
+
 
 .brand-words {
   line-height: 1.1em;
