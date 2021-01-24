@@ -1,6 +1,6 @@
 <template>
-  <div class="page has-background-primaryautoheight">
-    <video
+  <div class="page has-background-primaryautoheight  ">
+    <!-- <video
       autoplay
       muted
       loop
@@ -8,7 +8,8 @@
       class="container reflect column is-paddingless is-marginless videobg columnsh"
     >
       <source src="https://i.imgur.com/e3nMuy8.mp4" type="video/mp4" />
-    </video>
+    </video> -->
+    <div class="landing"></div>
     <div class="logo-container">
       <div class="logo">
         <span class="logo-hf">Henry&nbsp;Fritz</span>
@@ -40,6 +41,9 @@ export default {
   top: 20%;
   min-height: 20vh;
 }
+.landing{
+  min-height:80vh;
+}
 @keyframes stretcher {
   0% {
  
@@ -57,12 +61,36 @@ export default {
     
   }
 }
-.videobg {
+.bgcycle {
+  
+  animation: bgcyc 3s infinite ;
+  /* animation-timing-function: linear; */
+}
+@keyframes bgcyc{
+0%
+{
+background: #ff3860;
+}
+20%{
+background: #3f325e;
+}
+40%{
+background: #96bdcf;
+}
+60%{
+background: #ffed48;
+}
+80%{
+background: #ff8045;
+}
+100%{
+background: #ff3860;
+}
 }
 .logo {
   /* backdrop-filter:  blur(10.3px) saturate(180%) contrast(190%) invert(77%) brightness(162%); */
   display: block;
-  color: rgb(255, 255, 255);
+  color: rgb(37, 32, 32);
   margin: 40px auto 0 auto;
   /* border:.4px rgba(114, 114, 114, 0.534) solid; */
   animation: stretcher 2s forwards;
@@ -259,15 +287,43 @@ textarea {
   text-align: right;
 }
 * {
-  --color1: hsl(140deg, 50%, 60%);
-  --color2: hsl(240deg, 40%, 60%);
+  --color1: rgb(235, 235, 235);
+  --color2: rgb(211, 211, 211);
 }
 .pageAnchor {
   transform: skew(22deg);
   padding-left: 20px;
   width: 40%;
-  color: whitesmoke;
+  color: rgb(78, 78, 78);
   font-weight: 800;
   background: linear-gradient(90deg, var(--color1), var(--color2));
+  box-shadow: 2px 3px 7px 1px #abababab;
+}
+.slide-from-left{
+  animation: slideleft 1.5s  ;
+}
+.slide-from-right{
+  animation: slideright 1.5s;
+}
+@keyframes slideleft{
+  0%{
+    transform: translateX(-100vh);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes slideright{
+  0%{
+    transform: translateX(100vh);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 1087px){
+.navbar .navbar-menu  {
+ background-color: #eee;
+}
 }
 </style>

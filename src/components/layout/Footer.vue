@@ -2,49 +2,24 @@
 <div class="footer-container">
 
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="footer-clip" preserveAspectRatio="none">
-    <polygon fill="white" points="100,0  0,0 100,100"/>
+    <polygon fill="#fff" points="100,0  0,0 100,100"/>
   </svg>
  <footer class="footer">
     <div class="content">
       <div>
-        <h1 class="has-text-centered dgray hfdd is-size-4">Henry Fritz <br/> <span class="is-size-6">Design & Development</span></h1>
        
         <div class="columns">
           <div class="column columns ">
             <div class="column is-1 is-size-1 is-hidden-mobile left-arrow-pad-left">
                <a @click="goBack()"> ◀ </a>
             </div>
+            <div class="column is-9"> <h1 class="has-text-centered dgray hfdd is-size-4">Henry Fritz <br/> <span class="is-size-6">Design & Development</span></h1>
+       </div>
             <div class="column is-2"><div class="navArrows is-hidden-tablet nameCard"><a @click="goBack()"> ◀ </a>
            <a @click="goForward()"> ▶ </a></div></div>
-             
-            <div class="column is-6 info-block nameCard">
-              <ul class="unbulleted info-list">
-                <li>
-                  <p class=" name is-marginless is-paddingless dgray">Henry Fritz</p>
-                  <p class=" dgray">Richmond, KY</p>
-                </li>
-                <li>
-                  <a
-                    href="mailto:HenryAmsterFritz@Gmail.com?"
-                    target="_top"
-                  >henryamsterfritz@gmail.com</a>
-                </li>
-                <li>
-                  <a href="tel:1-859-200-8540">859.200.8540</a>
-                </li>
-              </ul>
-            </div>
+            
           </div>
-          <div class="column is-1 is-size-2 has-text-centered">
           
-          </div>
-          <div class="column is-3 has-text-centered  is-hidden-mobile">
-            <img
-              src="https://66.media.tumblr.com/cf1dbd71f9ffbf7c226bbc237b3fc14d/tumblr_pj78czO5RG1xgv4g2o3_400.gif"
-              alt
-              class="spin hand"
-            >
-          </div>
           <div class="column is-1 is-size-1 is-hidden-mobile"> 
             <a @click="goForward()"> ▶ </a></div>
         </div>
@@ -84,7 +59,7 @@ export default {
   margin-left:20px;
 }
 .dgray{
-  color: #dadcdd !important;
+  color: #4d4d4d !important;
  
 }
 @media (max-width: 768px) {
@@ -108,14 +83,15 @@ font-size:1.2em !important;
 
 }
 
-.footer-clip{background:var(--footer-grad-bottom);
+.footer-clip{
+  background:#fafafa;
  position: absolute;
     top:-30px;
   }
 .footer-container{
     position: relative;
     margin-top:30px;
-  --footer-grad-bottom: #222;
+  /* --footer-grad-bottom: #222; */
 }
 svg {
  
@@ -127,11 +103,11 @@ footer{
   /* transform: skewY(-2deg);
   transform-origin: top left; */
   padding: 0 !important;
-  background: linear-gradient(360deg, rgb(26, 26, 26), var(--footer-grad-bottom));
+  background: #eee;
   color:rgb(255, 255, 255) !important;
 }
 footer a{
-  color:#feffaf;
+  color:#383838;
   
 }
 footer a:hover{

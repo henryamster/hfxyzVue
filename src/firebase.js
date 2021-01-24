@@ -22,7 +22,6 @@ var firebaseConfig = {
 //   messagingSenderId: process.env.VUE_APP_MESSAGINGSENDERID,
 // };
 
-console.log(firebaseConfig);
 
 export default {
   install: (Vue, options) => {

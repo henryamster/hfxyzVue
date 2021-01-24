@@ -15,7 +15,7 @@
       <p class="is-bold">Learn more:</p>
       <ul>
           <li :key="link" v-for="link in post.links" class="tag">
-              <a :href="link">{{link}}</a>
+              <a :href="link" >{{link.substr(0,25)+'...'}}</a>
           </li>
       </ul>
       <p>Tagged: 
@@ -53,13 +53,15 @@ export default {
 }
 </script>
 <style >
-@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text|Quicksand|Pinyon+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Trirong|DM+Serif+Text|Quicksand|Pinyon+Script&display=swap");
 .post{
-    padding:8px;   
-  
-    border-radius:8px;
-     border-radius:12px;
-     margin:8px;
+   padding: 24px;
+
+    box-shadow: 2px 2px 3px 2px #eee, inset -5px -5px 10px 3px #cecece;
+    /* border: 2px solid #8e8e8e78; */
+    margin:8px;
+    
+    border-radius:18px;
 }
 .content{
     padding-top:25px;
@@ -67,11 +69,21 @@ export default {
     word-spacing: 2px;
 }
 .pinyon{
-    font-family: 'Quicksand';
+  -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    color: grey;
+    font-family: Trirong;
     font-weight: 100;
-  
-    line-height:1.4em;
-    font-size:2em;
+    line-height: 1.4em;
+    font-size: 2.1em;
+    text-shadow: 3px 3px 5px #8c8c8c40;
+    background: #f9f8f259;
+    border-radius: 26px;
+    margin-bottom: 14px;
+    padding: 10px;
+    -webkit-box-shadow: inset 1px 3px 10px 2px #bdbdbd;
+    box-shadow: inset 1px 3px 10px 2px #bdbdbd;
+    text-align: center;
 }
 .date{
     font-size:.6em;
@@ -80,14 +92,18 @@ export default {
     display:inline-flex;
     color:rgb(47, 105, 107);
     background:rgb(238, 238, 238);
-    border-radius:8px;
+    border-radius:14px  !important;
     padding:2px;
     margin:3px;
-    font-size: .65em !important;
+    font-size: .95em !important;
         font-family: monospace;
-   box-shadow:3px 3px rgb(109, 109, 109);
+   box-shadow: 4px 4px 5px 1px rgb(109 109 109 / 27%);
 }
 .tag a{
-    font-size:.6em;
+    font-size:.85em;
 }
+.cp_embed_wrapper{
+box-shadow: -6px 7px 7px 2px #8888884d;
+}
+
 </style>

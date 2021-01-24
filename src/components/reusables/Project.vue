@@ -42,8 +42,7 @@ p.link-project {
   font-weight: 800;
 }
 .post{
-    padding:8px;   
-    border-radius:8px;
+  
 
 }
 .content{

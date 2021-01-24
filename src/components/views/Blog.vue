@@ -4,8 +4,8 @@
       <h2 class="pageAnchor">//Blog</h2>
     </div>
     <div class="post-container is-fluid column columns is-10 is-offset-1 is-multiline">
-<div :key="post" v-for="post in postCollection" class="column is-6">
-   <Post :post="post"  />
+<div :key="post" v-for="(post, index) in postCollection" class="column is-6">
+   <Post :post="post" v-bind:class="index%2==0? 'slide-from-left': 'slide-from-right' "/>
    
       <p></p>
       <hr>

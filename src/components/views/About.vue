@@ -1,20 +1,26 @@
 <template>
-  <div class="column">
-    <h2 class="pageAnchor">//About</h2>
-    <div class="columns p-bottom">
+  <div class="column ">
+    <h2 class="pageAnchor ">//About</h2>
+    <div class="columns p-bottom top-mar">
       <div
-        class="is-4 is-offset-1 column level-item has-text-centered aos-init aos-animate"
-        data-aos="zoom-in"
+        class="is-4 is-offset-1 column level-item has-text-centered "
+       
       >
-        <img src="../../assets/me.png" alt="Photo of Henry Fritz" class="shad">
-        <h1 class="is-size-2">Howdy!</h1>
+        <img src="../../assets/me.png" alt="Photo of Henry Fritz" class="shad photo">
+        <h1 class="is-size-2 slide-from-left">Howdy!</h1>
         <br>
         <p
-          class="has-text-left"
-        >My name is Henry Fritz. I'm a web designer/developer. I dabble in graphic design and 3D motion graphics and in my spare time I like to play, write, and record music. I currently live in my hometown of Richmond, Ky, where I graduated from Eastern Kentucky University. <br/> <br/>I am a Javascript Developer at EKU's Training Resource Center where I build enterprise front-end applications on top of a .Net/SQL stack. </p>
-        <p></p>
+          class="has-text-left margin-10 slide-from-left"
+        >My name is Henry Fritz. I specialize in designing web software from prototype to schema to finished product. I love working directly with customers to build the software that works for them they way they want it to. I live in my hometown of Richmond, Ky, where I work primarily on enterprise applications utilizing the .Net, SQL, and Angular stack.  </p>
+        <p class="has-text-left margin-10 slide-from-left"> In my spare time I love to work on 3d graphics, algorithmic artwork, and writing, playing, and recording music. Before becoming a full-time developer, I've had an interesting mix of life and job experience including deejaying at a college radio station, being a picker in an amazon warehouse, and nearly a decade of experience in the retail industry with job titles ranging from clerk to manager to infrastructure architect intern. 
+          <p class="has-text-left margin-10 slide-from-left">
+
+          </p>
+
+         
+
       </div>
-      <div class="is-6 column level-item aos-init aos-animate" data-aos="flip-down">
+      <div class="is-6 column level-item slide-from-right" data-aos="flip-down">
         <h1 class="is-size-2 ">Henry Fritz</h1>
         <h3>Education</h3>
         <p data-aos="fade-right" class="aos-init aos-animate">
@@ -68,6 +74,31 @@
   </div>
 </template>
 <style>
+.photo{
+height: auto;
+    /* padding: 5px; */
+    margin: 3px;
+    max-width: 100%;
+    border-radius: 100%;
+    -webkit-box-shadow: inset 5px 6px 9px 2px #ccc;
+    box-shadow: inset 5px 5px 9px 2px #ccc;
+    -webkit-animation: popup 2s;
+    animation: popup 2s;
+}
+.margin-10{
+  padding:1em;
+}
+@keyframes popup {
+  0%{
+  transform: translateY(10vh) rotateX(60deg);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+.top-mar{
+  margin-top:4em;
+}
 
 </style>
 

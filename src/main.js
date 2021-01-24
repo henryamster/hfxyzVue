@@ -5,6 +5,11 @@ import store from "./store";
 import router from "./router";
 import vCodePen from "./codepen";
 import firebase from "./firebase";
+import VueAnalytics from 'vue-analytics';
+
+Vue.use(VueAnalytics, {
+  id: 'G-ERRTGK3DY2'
+})
 
 Vue.use(firebase);
 

@@ -3,7 +3,7 @@
     <div class="column">
       <h2 class="pageAnchor">//Contact</h2>
     </div>
-    <div class="columns level p-top" id="contact">
+    <div class="columns level p-top slide-from-left" id="contact">
       <div class="column is-2 is-offset-1 level-item aos-init aos-animate" data-aos="fade-up-right">
         <h2 class="is-size-2">Want to get in contact?</h2>
         <p>
@@ -11,8 +11,8 @@
           <a href="mailto:henryamsterfritz@gmail.com">email</a> or by filling out this form.
         </p>
       </div>
-      <div class="column is-4 level-item aos-init aos-animate" data-aos="fade-up-left">
-        <form action class="box">
+      <div class="column is-4 level-item ">
+        <form action class="box slide-from-right">
           <ul>
             <li>
               <label>Name:</label>
@@ -131,6 +131,7 @@ export default {
   color: whitesmoke;
 }
 #contact {
+  padding:1em;
   padding-top: 6em;
   padding-bottom: 2em;
   margin: 8px;
@@ -158,4 +159,5 @@ textarea {
   color: red;
   font-weight: 800;
 }
+.box{border-radius:14x;box-shadow:5px 7px 12px 5px #7d808230;}
 </style>

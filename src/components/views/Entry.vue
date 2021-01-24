@@ -1,12 +1,13 @@
 <template>
     <div class="entry">
         <div class="column is-10 is-offset-1">
-            <Post :post="post" class="entrySize"/>
-            <p class="is-size-6 post">
+             <p class="is-size-6 pageAnchor">
                 linkable address: https://henryfritz/xyz/blog/{{slug}}
             </p>
+            <Post :post="post" class="entrySize"/>
+           
             <!-- {{JSON.stringify($route.params)}} -->
-            <router-link to="/blog" class="post"> Go back to blog</router-link> 
+            <router-link to="/blog" class="pageAnchor"> Go back to blog</router-link> 
         </div>
 
     </div>

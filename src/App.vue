@@ -2,7 +2,7 @@
   <div id="app">
     <Header/>
     <transition name="slide-fade">
-    <router-view class="min-100"/>
+    <router-view class="min-100 card"/>
     </transition>
     <Footer/>
   </div>
@@ -22,9 +22,12 @@ export default {
 </script>
 
 <style>
-
+#app{
+  background: linear-gradient(45deg, #eeeeee, #98989880);
+}
 .min-100 {
-  min-height: 60vh;
+  min-height: 80vh;
+  box-shadow:12px 12px 24px rgba(0,0,0,0.2);
 }
 
 .navbar-burger{
@@ -42,7 +45,7 @@ margin-right:30px;
 }
 
 .slide-fade-enter{
-  transform: rotateZ(-45deg) rotateX(30deg) translateY(-100%) translateX(-100%) scale(.14);
+  transform: rotateZ(-90deg) rotateX(90deg) translateY(-100%) translateX(-30%) scale(.14);
   opacity: 0;
   
  
@@ -57,7 +60,7 @@ margin-right:30px;
 }
 .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: rotateZ(-45deg) rotateX(30deg) translateY(100%) translateX(100%) scale(.14);
+  transform: rotateZ(-90deg) rotateX(90deg) translateY(100%) translateX(100%) scale(.14);
   
    opacity: 0;
 }

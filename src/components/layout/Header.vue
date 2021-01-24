@@ -32,7 +32,7 @@
         </div>
       </template>
     </b-navbar>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50" preserveAspectRatio="none" class="header-clip"><polygon fill="#222" points="100,0  0,0 25,0 75,10 100,100"></polygon></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50" preserveAspectRatio="none" class="header-clip"><polygon fill="#eee" points="100,0  0,0 25,0 75,10 100,100"></polygon></svg>
   </div>
 </template>
 
@@ -56,6 +56,9 @@ svg polygon{
   width: 100%;
   height: 32px;
 }
+.navbar{
+  background:#eee;
+}
 
 .navbar-item:hover{
 animation: pop .9s forwards;
@@ -64,8 +67,11 @@ animation: pop .9s forwards;
   0%{
     color:#555;
     font-weight:800;
-    border-bottom: 5px solid #555;
-    box-shadow: 2px 2px #555, -2px -2px #555;
+    /* border: 5px solid #444; */
+    margin:3px;
+    box-shadow: 12px 0px 4px #555, -2px -2px 8pxs #222;
+    transform: rotateY(5deg) rotateX(5deg) translateX(-.2em);
+    border-radius: 14px;
   }
   99%{
     border: 0px;
